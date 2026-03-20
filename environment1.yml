@@ -1,0 +1,26 @@
+name: reaction_gnn_env
+channels:
+  - pytorch
+  - pyg           # Bổ sung channel này cho PyTorch Geometric
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.11
+  - pytorch::pytorch>=2.1
+  - pyg::pyg      # Bổ sung: PyTorch Geometric (cho GNN)
+  - astartes
+  - aimsim
+  - configargparse
+  - lightning>=2.0
+  - numpy<2.0
+  - pandas
+  - rdkit
+  - scikit-learn
+  - scipy
+  - rich
+  - descriptastorus
+  - optuna
+  - networkx      # Bổ sung: Xử lý đồ thị ITS
+  - joblib        # Bổ sung: Xử lý song song dữ liệu
+  - tqdm          # Bổ sung: Thanh tiến trình training
+  - matplotlib    # Bổ sung: Vẽ biểu đồ
